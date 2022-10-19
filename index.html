@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle "></div>
+        </header>
+        
+        <!-- Video -->
+        <video src="https://player.vimeo.com/external/390154033.sd.mp4?s=ffe62c1fd6b1fe9c33a8299b7883389fb1e6ef4d&profile_id=164&oauth2_token_id=57447761" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellat rem magnam consectetur eaque. In fugiat sequi accusamus perspiciatis quia.</p>
+
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="/images/fb.svg"></a></li>
+            <li><a href="#"><img src="/images/twitter.svg"></a></li>
+            <li><a href="#"><img src="/images/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contebt</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const toggle = document.querySelector(".toggle");
+        const showcase = document.querySelector(".showcase");
+        const text = document.querySelector(".text");
+
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            text.classList.toggle('active')
+        })
+
+    </script>
+</body>
+</html>
